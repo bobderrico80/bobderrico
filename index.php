@@ -4,3 +4,11 @@ get_header();
     //<body>
         //<div class="pageWrapper">
             get_sidebar();
+?>
+            <div class="content">
+                
+            </div>
+        </div>
+            <?php
+            get_footer();
+                    
