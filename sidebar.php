@@ -46,6 +46,22 @@
                         } //end foreach
                     ?>
                 </ul>
-                
+                <h2>Categories</h2>
+                <ul class="catList">
+                    <?php 
+                        $cats = get_categories();
+                        foreach ($cats as $cat) {
+                            $href = get_category_link($cat->term_id);
+                            $name = $cat->name;
+                    ?>
+                    <li>
+                        <a href="<?php echo $href; ?>" title="<?php echo $name; ?>">
+                           <?php echo $name; ?>
+                        </a>
+                    </li>
+                    <?php 
+                        } //end foreach
+                    ?>
+                </ul>
             </div>
 
