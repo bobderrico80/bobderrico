@@ -11,9 +11,3 @@
             <div class="header">
                 <h1><?php bloginfo('name') ?></h1>
             </div>
-            <div class="pageNav">
-                <?php wp_page_menu(array(
-                    'depth' => 1,
-                    'show_home' => TRUE
-                ));?>
-            </div>

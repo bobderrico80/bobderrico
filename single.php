@@ -11,8 +11,8 @@ get_header();
                         while(have_posts()) {
                             the_post();
                 ?>
-                <div class="summary" id="<?php the_id();?>">
-                    <h2 class="summaryTitle">
+                <div class="single" id="<?php the_id();?>">
+                    <h2 class="singleTitle">
                         <a href="<?php echo get_permalink(); ?>" title="<?php the_title(); ?>">
                             <?php the_title(); ?>
                         </a>
@@ -24,16 +24,16 @@ get_header();
                             $alt = get_post_meta($thumbnail->ID, '_wp_attachment_image_alt', true);
                             $title = $thumbnail->post_title;
                     ?>
-                    <img src="<?php echo $src ?>" alt="<?php echo $alt ?>" title="<?php echo $title ?>" class="summaryImage"/>
+                    <img src="<?php echo $src ?>" alt="<?php echo $alt ?>" title="<?php echo $title ?>" class="singleImage"/>
                     <?php
                         } //end if (has_post_thumbnail())
                     ?>
-                    <p class="summaryTime"><?php the_time('F j, Y'); ?></p>
-                    <div class="summaryContent">
+                    <p class="singleTime"><?php the_time('F j, Y'); ?></p>
+                    <div class="singleContent">
                         <?php the_content(); ?>
                     </div>
-                    <p class="summaryTags"><?php the_tags('<span class="taggedAs">Tagged As: </span>'); ?></p>
-                    <p class="summaryComments">
+                    <p class="singleTags"><?php the_tags('<span class="taggedAs">Tagged As: </span>'); ?></p>
+                    <p class="singleComments">
                         <?php 
                             $href = get_comments_link();
                             $num = get_comments_number();
