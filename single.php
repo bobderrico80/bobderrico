@@ -33,38 +33,58 @@ get_header();
                         <?php the_content(); ?>
                     </div>
                     <p class="singleTags"><?php the_tags('<span class="taggedAs">Tagged As: </span>'); ?></p>
-                    <p class="singleComments">
-                        <?php 
-                            $href = get_comments_link();
-                            $num = get_comments_number();
-                            if ($num == 1) {
-                                $unit = ' comment';
-                            } else {
-                                $unit = ' comments';
-                            }
-                            $num .= $unit;
-                        ?>
-                        <a href="<?php echo $href ?>" title="<?php $num ?>">
-                            <?php echo $num; ?>
-                        </a>
-                    </p>
                 </div>
+            </div>
+            <div class="pageNav">
+                <div class="pageNavPrevious">
+                    <?php previous_post_link('&laquo %link','Previous'); ?>
+                </div>
+                <div class="pageNavNext">
+                    <?php next_post_link('%link &raquo', 'Next'); ?>
+                </div>
+            </div>
+            <div class="comments">
+                <a name="comments"></a>
+                <?php 
+                    $closedFlag = false;
+                    if (!get_comments_number() && !comments_open()) {
+                ?>
+                <p class="commentsClosed">Comments are closed on this item.</p>
                 <?php
+                    $closedFlag = true;
+                    } elseif (!get_comments_number()) {
+                ?>
+                <h2 class="commentsTitle">0 comments</h2>
+                <p class="commentsSubtitle">Be the first to comment!</p>
+                <?php
+                    } else {
+                        comments_template();
+                    }
+                    
+                    if (comments_open()) {
+                        comment_form();
+                    } elseif (!$closedFlag) {
+                ?>
+                <p class="commentsClosed">Comments are closed on this item.</p>
+                <?php
+                    }
+                ?>
+            </div>
+            <?php
                         } //end while (have_posts())
                     } /* end if(have_posts()) */ else {
-                ?>
-                <div class="noResults">
-                    <p>
-                        Sorry, there is nothing to show you here. :-( <br>
-                        <a href="<?php bloginfo('url'); ?>" name="Return to Home">
-                            Return to Home
-                        </a>
-                    </p>
-                </div>
+            ?>
+            <div class="noResults">
+                <p>
+                    Sorry, there is nothing to show you here. :-( <br>
+                    <a href="<?php bloginfo('url'); ?>" name="Return to Home">
+                        Return to Home
+                    </a>
+                </p>
+            </div>
                 <?php
                     } //end else
                 ?>
-            </div>
         </div>
             <?php
             get_footer();

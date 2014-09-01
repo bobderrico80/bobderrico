@@ -51,6 +51,16 @@ get_header();
                 </div>
                 <?php
                         } //end while (have_posts())
+                ?>
+                <div class="pageNav">
+                    <div class="pageNavPrevious">
+                        <?php previous_posts_link(); ?>
+                    </div>
+                    <div class="pageNavNext">
+                        <?php next_posts_link(); ?>
+                    </div>
+                </div>
+                <?php
                     } /* end if(have_posts()) */ else {
                 ?>
                 <div class="noResults">
@@ -64,14 +74,6 @@ get_header();
                 <?php
                     } //end else
                 ?>
-            </div>
-            <div class="pageNav">
-                <div class="pageNavPrevious">
-                    <?php previous_posts_link(); ?>
-                </div>
-                <div class="pageNavNext">
-                    <?php next_posts_link(); ?>
-                </div>
             </div>
         </div>
             <?php
