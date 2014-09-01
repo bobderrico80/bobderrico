@@ -65,6 +65,14 @@ get_header();
                     } //end else
                 ?>
             </div>
+            <div class="pageNav">
+                <div class="pageNavPrevious">
+                    <?php previous_posts_link(); ?>
+                </div>
+                <div class="pageNavNext">
+                    <?php next_posts_link(); ?>
+                </div>
+            </div>
         </div>
             <?php
             get_footer();
