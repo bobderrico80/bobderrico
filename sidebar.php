@@ -6,8 +6,8 @@
                 <h2>Recent Posts</h2>
                 <ul class="recentPosts">
                     <?php 
-                        $posts = wp_get_recent_posts();
-                        foreach ($posts as $post) {
+                        $recentPosts = wp_get_recent_posts();
+                        foreach ($recentPosts as $post) {
                             $href = get_permalink($post['ID']);
                             $title = $post['post_title'];
                     ?>
@@ -17,7 +17,7 @@
                         </a>
                     </li>
                     <?php
-                        } //end foreach
+                        } //end foreach 
                     ?>
                 </ul>
                 <h2>Archives</h2>
