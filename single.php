@@ -13,9 +13,7 @@ get_header();
                 ?>
                 <div class="single" id="<?php the_id();?>">
                     <h2 class="singleTitle">
-                        <a href="<?php echo get_permalink(); ?>" title="<?php the_title(); ?>">
                             <?php the_title(); ?>
-                        </a>
                     </h2>
                     <?php 
                         if (has_post_thumbnail()) {

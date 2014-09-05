@@ -5,7 +5,6 @@
             <div class="sidebar">
                 <h2>Sections</h2>
                 <?php wp_page_menu(array(
-                    'depth' => 1,
                     'show_home' => 'Blog'
                 ));?>
                 <h2>Recent Posts</h2>
