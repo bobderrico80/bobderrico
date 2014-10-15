@@ -9,7 +9,11 @@ Version: 1.0
 body {
   margin:0px;
   padding:0px;
-  font-family: âPalatino Linotypeâ, âBook Antiquaâ, Palatino, serif;
+  font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
+  background-color:#000044;
+  background-image:url('background-small.jpg');
+  background-attachment:fixed;
+  color:white;
 }
 
 p {
@@ -18,14 +22,22 @@ p {
 
 h1 {
   font-size:2em;
+  font-weight:normal;
 }
 
 h2 {
   font-size:1.5em;
+  font-weight:normal;
 }
 
 h3 {
   font-size:1.25em;
+  font-weight:normal;
+}
+
+h4 {
+  font-size:1.15em;
+  font-weight:normal;
 }
 
 a {
@@ -33,32 +45,66 @@ a {
 }
 
 a:link {
-  color:blue;
+  color:#4087D0;
 }
 
 a:visited {
-  color:blue;
+  color:#4087D0;
 }
 
 a:hover {
   text-decoration:underline;
 }
 
+ul li {
+  list-style-type:square;
+}
+
+blockquote {
+  margin-left:20px;
+  border-left:1px solid white;
+  padding-left:10px;
+  font-style:italic;
+}
+
 .header {
-  background-color:lightblue;
-  height:120px;
+  background-color:black;
+  color:white;
+  padding:10px
 }
 
 .headerTitle, .headerSubtitle {
   margin-top:0px;
   margin-bottom:0px;
-  margin-left:10px;
-  padding-top:10px;
   font-weight:normal;
+  display:inline;
 }
 
 .headerTitle {
-  font-size:3em;
+  font-size:2em;
+}
+
+.headerSubtitle {
+  font-size:1em;
+}
+
+.headerNavbarArea {
+  margin-top:10px;
+}
+
+.navbar ul{
+  list-style:none;
+  padding:0px;
+  margin:0px;
+}
+
+.navbar li {
+  display:inline;
+  margin-right:10px;
+}
+
+.navbar a:link, .navbar a:visited {
+  color:grey;
 }
 
 .sidebar {
@@ -92,16 +138,37 @@ a:hover {
   margin-bottom:5px
 }
 
+.content {
+  padding-left:10px;
+  padding-right:10px;
+}
+
 .summaryTitle {
-  font-size:3em;
+  font-size:2em;
   margin-top:20px;
   margin-bottom:10px;
   font-weight:normal;
 }
 
+.summaryTime {
+  font-style:italic;
+  margin-top:0px;
+}
+
 .summaryImage {
-  width:250px;
-  float:left;
-  margin-right:15px;
-  margin-bottom:15px;
+  width:80%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.summaryContent img {
+  width:90%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.taggedAs {
+  font-style:italic;
 }
