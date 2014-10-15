@@ -172,3 +172,15 @@ blockquote {
 .taggedAs {
   font-style:italic;
 }
+
+.footer {
+  background-color:black;
+  margin-top: 20px;
+  padding:5px;
+  text-align:center;
+}
+
+.footer p {
+  margin:0px;
+  font-size:.8em;
+}
