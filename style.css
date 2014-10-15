@@ -143,26 +143,26 @@ blockquote {
   padding-right:10px;
 }
 
-.summaryTitle {
+.articleTitle {
   font-size:2em;
   margin-top:20px;
   margin-bottom:10px;
   font-weight:normal;
 }
 
-.summaryTime {
+.articleTime {
   font-style:italic;
   margin-top:0px;
 }
 
-.summaryImage {
+.articleImage {
   width:80%;
   display:block;
   margin-left:auto;
   margin-right:auto;
 }
 
-.summaryContent img {
+.articleContent img {
   width:90%;
   display:block;
   margin-left:auto;
