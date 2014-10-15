@@ -8,7 +8,7 @@ get_header();
         <div class="article" id="<?php the_id();?>">
           <h2 class="articleTitle">
             <?php 
-              if (is_single()) {
+            if (is_single() || is_page()) {
                 the_title();
               } else {
             ?>

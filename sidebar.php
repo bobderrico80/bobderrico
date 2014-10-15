@@ -3,11 +3,7 @@
     //<body>
         //<div class="pageWrapper"> ?>
             <div class="sidebar">
-                <h2>Sections</h2>
-                <?php wp_page_menu(array(
-                    'show_home' => 'Blog'
-                ));?>
-                <h2>Recent Posts</h2>
+               <h2>Recent Posts</h2>
                 <div class="recentPosts">
                     <ul>
                         <?php 

@@ -45,4 +45,5 @@ get_header();
       </div> <!-- .content -->
     </div><!-- .pageWrapper -->
       <?php
+      get_sidebar();
       get_footer();
