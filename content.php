@@ -11,12 +11,13 @@ get_header();
               if (is_single()) {
                 the_title();
               } else {
-                the_title('<a href=">' . get_permalink() . '" title="' . the_title . '">','</a>');
-              }
             ?>
             <a href="<?php echo get_permalink(); ?>" title="<?php the_title(); ?>">
               <?php the_title(); ?>
             </a>
+            <?php
+              } //end else
+            ?>
           </h2>
           <p class="articleTime"><?php the_time('F j, Y'); ?></p>
           <?php 
@@ -34,19 +35,4 @@ get_header();
             <?php the_content(); ?>
           </div>
           <p class="articleTags"><?php the_tags('<span class="taggedAs">Tagged As: </span>'); ?></p>
-          <p class="articleComments">
-            <?php 
-              $href = get_comments_link();
-              $num = get_comments_number();
-              if ($num == 1) {
-                $unit = ' comment';
-              } else {
-                $unit = ' comments';
-              }
-              $num .= $unit;
-            ?>
-            <a href="<?php echo $href ?>" title="<?php $num ?>">
-              <?php echo $num; ?>
-            </a>
-          </p>
-        </div>
+       </div>

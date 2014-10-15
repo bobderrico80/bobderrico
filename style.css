@@ -173,6 +173,23 @@ blockquote {
   font-style:italic;
 }
 
+.pageNavPrevious {
+  float:left;
+}
+
+.pageNavNext {
+  text-align:right;
+}
+
+.comments {
+  border-top:1px solid white;
+  margin-top:25px;
+}
+
+.comment-form-comment textarea {
+  width:100%
+}
+
 .footer {
   background-color:black;
   margin-top: 20px;

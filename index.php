@@ -4,13 +4,29 @@ get_header();
   //<body>
     //<div class="pageWrapper">
 ?>
+      <div class="content">
       <?php
         if (have_posts()) {
           while(have_posts()) {
             the_post();
       ?>
-      <div class="content">
-      <?php get_template_part('content');      
+      <?php get_template_part('content');?>      
+        <p class="articleComments">
+        <?php 
+          $href = get_comments_link();
+            $num = get_comments_number();
+            if ($num == 1) {
+              $unit = ' comment';
+            } else {
+              $unit = ' comments';
+            }
+            $num .= $unit;
+          ?>
+          <a href="<?php echo $href ?>" title="<?php $num ?>">
+            <?php echo $num; ?>
+          </a>
+        </p>
+      <?php 
           } //end while (have_posts())
       ?>
         <div class="pageNav">
