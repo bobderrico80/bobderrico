@@ -86,6 +86,7 @@ blockquote {
 
 .headerSubtitle {
   font-size:1em;
+  color:#3989eb
 }
 
 .headerNavbarArea {
@@ -199,4 +200,59 @@ blockquote {
 .footer p {
   margin:0px;
   font-size:.8em;
+}
+
+/*Styles for wide screens */
+@media (min-width:1200px) {
+  
+  body {
+    background-image:url('background-large.jpg')
+  }
+  
+  .headerTitle {
+    font-size:3em;
+  }
+  
+  .headerSubtitle {
+    font-size:2em;
+    margin-left: 25px;
+  }
+  
+  .content, .sidebar {
+    display:inline-block;
+    vertical-align:top;
+  }
+  
+  .content {
+    width:800px;
+    margin-left:30px;
+  }
+  
+  .sidebar {
+    width:300px;
+    margin-left:50px;
+  }
+  
+  .articleImage  {
+    width:300px !important;
+    float:left;
+    margin-right:30px;
+    margin-bottom:20px;
+  }
+  
+  .content img {
+    width:auto;
+    max-width:500px;
+  }
+  
+  .navbar ul {
+    margin-left:15px;
+  }
+  
+  .navbar li {
+    font-size:1.5em;
+    margin-right:40px;
+  }
+  
+
 }

@@ -14,7 +14,6 @@
     </title>
   </head>
   <body class="<?php body_class(); ?>">
-    <div class="pageWrapper">
       <div class="header">
         <div class="headerTitleArea">
           <h1 class="headerTitle"><?php bloginfo('name'); ?></h1>

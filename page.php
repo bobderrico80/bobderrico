@@ -2,8 +2,8 @@
 get_header();
 //<html>
   //<body>
-    //<div class="pageWrapper">
 ?>
+    <div class="pageWrapper">
       <?php
         if (have_posts()) {
           while(have_posts()) {
@@ -19,7 +19,7 @@ get_header();
         } //end else
       ?>
       </div> <!-- .content -->
+      <?php get_sidebar();?>
     </div><!-- .pageWrapper -->
       <?php
-      get_sidebar();
       get_footer();
