@@ -10,7 +10,7 @@ body {
   margin:0px;
   padding:0px;
   font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
-  background-color:#000044;
+  background-color:#03203e;
   background-image:url('background-small.jpg');
   background-attachment:fixed;
   color:white;
@@ -77,7 +77,8 @@ blockquote {
   margin-top:0px;
   margin-bottom:0px;
   font-weight:normal;
-  display:inline;
+  display:block;
+  white-space:nowrap;
 }
 
 .headerTitle {
@@ -165,9 +166,11 @@ blockquote {
   padding-right:10px;
   padding-top:10px;
   padding-bottom:1px;
-  margin:10px;
+  margin-bottom:10px;
+  margin-left:10px;
+  margin-right:10px;;
   margin-top:30px;
-  background-color:#0c376c;
+  border-top:2px solid white;
 }
 
 .sidebar a:link, .sidebar a:visited {
@@ -176,6 +179,7 @@ blockquote {
 
 .sidebar h2 {
   margin:0px;
+  color:#4087D0;
 }
 
 .sidebar ul {
@@ -203,19 +207,24 @@ blockquote {
 }
 
 /*Styles for wide screens */
-@media (min-width:1200px) {
+@media (min-width:1250px) {
   
   body {
     background-image:url('background-large.jpg')
   }
   
+  .headerTitle, .headerSubtitle {
+    display:inline-block;
+  }
+  
   .headerTitle {
     font-size:3em;
+    margin-right: 25px;
   }
   
   .headerSubtitle {
     font-size:2em;
-    margin-left: 25px;
+    
   }
   
   .content, .sidebar {
@@ -231,6 +240,8 @@ blockquote {
   .sidebar {
     width:300px;
     margin-left:50px;
+    border:0px;
+    background-color:#0c376c;
   }
   
   .articleImage  {
@@ -254,5 +265,71 @@ blockquote {
     margin-right:40px;
   }
   
+}
+
+/*Styles for medium screens */
+@media (min-width:800px) and (max-width:1249px) {
+  body {
+    background-image:url('background-large.jpg');
+    background-repeat:repeat-y;
+  }
+  
+  .headerTitle, .headerSubtitle {
+    display:inline-block;
+  }
+  
+  .headerTitle {
+    font-size:3em;
+    margin-right:25px;
+  }
+  
+  .headerSubtitle {
+    font-size:2em;
+    margin-left: 0px;
+  }
+  
+  .content, .sidebar {
+    display:inline-block;
+    vertical-align:top;
+  }
+  
+  .content {
+    width:62%;
+    margin-left:2%;
+    margin-right:2%;
+    padding-left:1%;
+    padding-right:1%;
+  }
+  
+  .sidebar {
+    width:24%;
+    margin-left:4%;
+    margin-right:1%;
+    padding-left:1%;
+    padding-right:1%;
+    background-color:#0c376c;
+    border:0px;
+  }
+  
+  .articleImage  {
+    width:300px !important;
+    float:left;
+    margin-right:30px;
+    margin-bottom:20px;
+  }
+  
+  .content img {
+    width:auto;
+    max-width:500px;
+  }
+  
+  .navbar ul {
+    margin-left:15px;
+  }
+  
+  .navbar li {
+    font-size:1.5em;
+    margin-right:40px;
+  }
 
 }
