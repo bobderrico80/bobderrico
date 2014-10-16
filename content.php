@@ -19,8 +19,12 @@ get_header();
               } //end else
             ?>
           </h2>
+          <?php 
+            if(!is_page()){
+          ?>
           <p class="articleTime"><?php the_time('F j, Y'); ?></p>
           <?php 
+            }//end if  
             if (has_post_thumbnail()) {
               $thumbnail = get_post(get_post_thumbnail_id());
               $src = wp_get_attachment_url(get_post_thumbnail_id());
