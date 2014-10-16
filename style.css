@@ -173,6 +173,15 @@ blockquote {
   border-top:2px solid white;
 }
 
+.socialArea img {
+  width:2em;
+  vertical-align:middle;
+}
+
+.socialArea li {
+  font-size:1.5em;
+}
+
 .sidebar a:link, .sidebar a:visited {
   color:white;
 }
