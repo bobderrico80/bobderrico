@@ -6,14 +6,21 @@ Description: Template for bobderrico.com
 Version: 1.0
 */
 
+html,
 body {
   margin:0px;
   padding:0px;
+  height:100%;
+}
+
+body {
   font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
   background-color:#03203e;
   background-image:url('background-small.jpg');
   background-attachment:fixed;
   color:white;
+  min-height:100%;
+  position:relative;
 }
 
 p {
@@ -67,10 +74,16 @@ blockquote {
   font-style:italic;
 }
 
+.container {
+  min-height:100%;
+  position:relative;
+}
+
 .header {
   background-color:black;
   color:white;
-  padding:10px
+  padding:10px;
+  position:relative;
 }
 
 .headerTitle, .headerSubtitle {
@@ -102,11 +115,57 @@ blockquote {
 
 .navbar li {
   display:inline;
+  padding-bottom:2px;
   margin-right:10px;
+}
+
+.navbar li:hover {
+  border-bottom:2px solid grey;
 }
 
 .navbar a:link, .navbar a:visited {
   color:grey;
+}
+
+.navbar a:hover {
+  text-decoration:none;
+}
+
+/* TODO - Get children menu working
+.children {
+  position:absolute;
+  background-color:black;
+  text-align:center;
+  left:-10px;
+  border-top:1px solid grey;
+}
+
+
+ul.children > li {
+  font-size:.8em;
+}
+
+REMOVE CODE BETWEEN COMMENTS WHEN WORKING
+*/
+
+.children {
+  display:none
+}
+
+/*********/
+
+.current_page_item > a:link,
+.current_page_item > a:visited {
+  color:white;
+}
+
+.current_page_item,
+li.current_page_item:hover {
+  border-bottom:2px solid white; !important
+}
+
+.pageWrapper {
+  padding-bottom:60px;
 }
 
 .content {
@@ -205,9 +264,12 @@ blockquote {
 
 .footer {
   background-color:black;
-  margin-top: 20px;
-  padding:5px;
+  padding-top:5px;
   text-align:center;
+  position:absolute;
+  width:100%;
+  bottom:0;
+  height:40px;
 }
 
 .footer p {
@@ -270,7 +332,7 @@ blockquote {
   }
   
   .navbar li {
-    font-size:1.5em;
+    font-size: 1.5em;
     margin-right:40px;
   }
   

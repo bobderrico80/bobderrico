@@ -14,18 +14,19 @@
     </title>
   </head>
   <body class="<?php body_class(); ?>">
-      <div class="header">
-        <div class="headerTitleArea">
-          <h1 class="headerTitle"><?php bloginfo('name'); ?></h1>
-          <h2 class="headerSubtitle"><?php bloginfo('description'); ?></h2>
+    <div class="container">
+        <div class="header">
+          <div class="headerTitleArea">
+            <h1 class="headerTitle"><?php bloginfo('name'); ?></h1>
+            <h2 class="headerSubtitle"><?php bloginfo('description'); ?></h2>
+          </div>
+          <div class="headerNavbarArea">
+            <div class="navbar">
+              <?php wp_page_menu(array(
+                'show_home' => 'Blog'
+             ));?>
+            </div> 
+          </div>
         </div>
-        <div class="headerNavbarArea">
-          <div class="navbar">
-            <?php wp_page_menu(array(
-              'show_home' => 'Blog'
-           ));?>
-          </div> 
-        </div>
-      </div>
         
      
