@@ -214,12 +214,12 @@ li.current-cat:hover {
 }
 
 .socialArea img {
-  width:2em;
+  width:1.5em;
   vertical-align:middle;
 }
 
 .socialArea li {
-  font-size:1.5em;
+  font-size:1.25em;
 }
 
 .sidebar a:link, .sidebar a:visited {

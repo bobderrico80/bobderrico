@@ -4,7 +4,7 @@
     //<div class="pageWrapper"> ?>
       <div class="sidebar">
         <div class="socialArea">
-        <h2>Find Me On</h2>
+        <h2>Connect</h2>
             <ul>
               <li>
                 <a href="https://twitter.com/BobDerrico80" target="_blank">
@@ -24,6 +24,19 @@
                   LinkedIn
                 </a>
               </li>
+              <li>
+                <a href="mailto:bob@bobderrico.com">
+                  <img src="<?php bloginfo('template_url');?>/email.png" alt="Email" title="Email">
+                  E-Mail
+                </a>
+              </li>
+              <li>
+                <a href="<?php bloginfo('rss2_url');?>" target="_blank">
+                  <img src="<?php bloginfo('template_url');?>/rss.png" alt="RSS" title="RSS">
+                  RSS
+                </a>
+              </li>
+
             </ul>
         </div>
         <h2>Skills</h2>
