@@ -38,5 +38,5 @@ get_header();
           <div class="articleContent">
             <?php the_content(); ?>
           </div>
-          <p class="articleTags"><?php the_tags('<span class="taggedAs">Tagged As: </span>'); ?></p>
+          <p class="articleTags"><?php the_tags('<span class="taggedAs">Skills: </span>'); ?></p>
        </div>
