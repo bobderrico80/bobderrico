@@ -98,6 +98,10 @@ blockquote {
   font-size:2em;
 }
 
+.headerTitle a {
+  color:white;
+}
+
 .headerSubtitle {
   font-size:1em;
   color:#3989eb
@@ -131,36 +135,13 @@ blockquote {
   text-decoration:none;
 }
 
-/* TODO - Get children menu working
-.children {
-  position:absolute;
-  background-color:black;
-  text-align:center;
-  left:-10px;
-  border-top:1px solid grey;
-}
-
-
-ul.children > li {
-  font-size:.8em;
-}
-
-REMOVE CODE BETWEEN COMMENTS WHEN WORKING
-*/
-
-.children {
-  display:none
-}
-
-/*********/
-
-.current_page_item > a:link,
-.current_page_item > a:visited {
+.current-cat > a:link,
+.current-cat > a:visited {
   color:white;
 }
 
-.current_page_item,
-li.current_page_item:hover {
+.current-cat,
+li.current-cat:hover {
   border-bottom:2px solid white; !important
 }
 

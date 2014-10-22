@@ -17,15 +17,15 @@
     <div class="container">
         <div class="header">
           <div class="headerTitleArea">
-            <h1 class="headerTitle"><?php bloginfo('name'); ?></h1>
+            <h1 class="headerTitle"><a href="<?php bloginfo('url');?>" title="home"><?php bloginfo('name'); ?></a></h1>
             <h2 class="headerSubtitle"><?php bloginfo('description'); ?></h2>
           </div>
           <div class="headerNavbarArea">
             <div class="navbar">
-              <?php wp_page_menu(array(
-                'show_home' => 'Blog'
-             ));?>
-            </div> 
+                <?php 
+                  wp_list_categories(array('title_li'=>null, 'exclude'=>'1'));                  
+                ?>
+            </div>
           </div>
         </div>
         
