@@ -22,9 +22,21 @@
           </div>
           <div class="headerNavbarArea">
             <div class="navbar">
-                <?php 
-                  wp_list_categories(array('title_li'=>null, 'exclude'=>'1'));                  
-                ?>
+              <ul>
+                <li>
+                  <a href="/category/projects/" title="Projects">Projects</a>
+                </li>
+                <li>
+                  <a href="/skills/" title="Skills">Skills</a>
+                </li>
+                <li>
+                  <a href="/about/" title="About">About</a>
+                </li>
+                <li>
+                  <a href="/category/my-story" title="My Story">My Story</a>
+                </li>
+              </ul>
+              
             </div>
           </div>
         </div>
