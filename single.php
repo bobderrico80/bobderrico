@@ -19,6 +19,7 @@ get_header();
             <?php next_post_link('%link &raquo', 'Next'); ?>
           </div>
         </div>
+        <div style="clear:both;"></div>
         <div class="comments">
           <a name="comments"></a>
           <?php 

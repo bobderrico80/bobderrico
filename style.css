@@ -104,7 +104,7 @@ blockquote {
 
 .headerSubtitle {
   font-size:1em;
-  color:#3989eb
+  color:#ffa400;
 }
 
 .headerNavbarArea {
@@ -155,10 +155,15 @@ li.current-cat:hover {
 }
 
 .articleTitle {
-  font-size:2em;
   margin-top:20px;
   margin-bottom:10px;
   font-weight:normal;
+}
+
+.articleTitle a:link,
+.articleTitle a:visited,
+.articleTitle {
+  color:#ffa400;
 }
 
 .articleTime {
@@ -189,7 +194,7 @@ li.current-cat:hover {
 }
 
 .pageNavNext {
-  text-align:right;
+  float:right;
 }
 
 .comments {
@@ -212,6 +217,11 @@ li.current-cat:hover {
 
 .projectTitle {
   margin-bottom:0px;
+}
+
+.projectTitle a:link,
+.projectTitle a:visited {
+  color:#ffa400;
 }
 
 .projectUrl {
@@ -254,7 +264,7 @@ li.current-cat:hover {
 
 .sidebar h2 {
   margin:0px;
-  color:#4087D0;
+  color:#ffa400;
 }
 
 .sidebar ul {
@@ -350,6 +360,7 @@ li.current-cat:hover {
   
   .projectTitle {
     margin-top:0px;
+    font-size:2em;
   }
   
   .projectImage {

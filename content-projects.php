@@ -29,19 +29,19 @@ get_header();
             <a href="<?php echo $linkURL; ?>" title="<?php the_title(); ?>" target="_blank">
               <?php echo $dispURL; ?>
             </a>
+            <a href="<?php echo $githubURL; ?>" title="View on Github" target="_blank">
+              (View on GitHub)
+            </a>
           </h3>
           <img src="<?php echo $src ?>" alt="<?php echo $alt ?>" title="<?php echo $title ?>" class="projectImage"/>
           <?php
             } //end if (has_post_thumbnail())
           ?>
           <div class="projectContent">
-            <?php the_excerpt(); ?>
+            <?php the_content(); ?>
           </div>
           <p class="projectTime">Launched on: <?php the_time('F j, Y'); ?></p>
           <p class="projectTags"><?php the_tags('<span class="taggedAs">Skills: </span>'); ?></p>
           <p class="projectGithubLink">
-            <a href="<?php echo $githubURL; ?>" title="View on Github" target="_blank">
-              View on GitHub
-            </a>
           </p>
        </div>

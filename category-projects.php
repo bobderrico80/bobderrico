@@ -7,17 +7,13 @@ get_header();
       <div class="pageWrapper">
         <div class="content">
           <h1 class="pageTitle">Project Gallery</h1>
-          <p class="pageDescription">
-            Below you will find a list of my completed projects.  Click on a project title to learn more.
-          </p>
-        <?php
-          if (have_posts()) {
-            while(have_posts()) {
-              the_post();
-        ?>
-        <?php get_template_part('content','projects');
-            } //end while (have_posts())
-        ?>
+          <?php
+            if (have_posts()) {
+              while(have_posts()) {
+                the_post();
+            get_template_part('content','projects');
+            } 
+          ?>
           <div class="pageNav">
             <div class="pageNavPrevious">
               <?php previous_posts_link(); ?>
@@ -26,6 +22,7 @@ get_header();
               <?php next_posts_link(); ?>
             </div>
           </div>
+          <div style="clear:both;"></div>
         <?php
           } /* end if(have_posts()) */ else {
             get_template_part('content','none');

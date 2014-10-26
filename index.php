@@ -38,6 +38,7 @@ get_header();
               <?php next_posts_link(); ?>
             </div>
           </div>
+          <div style="clear:both;"></div>
         <?php
           } /* end if(have_posts()) */ else {
             get_template_part('content','none');
