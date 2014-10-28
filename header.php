@@ -36,7 +36,6 @@
                   <a href="/category/my-story" title="My Story">My Story</a>
                 </li>
               </ul>
-              
             </div>
           </div>
         </div>

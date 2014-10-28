@@ -8,32 +8,27 @@
             <ul>
               <li>
                 <a href="https://twitter.com/BobDerrico80" target="_blank">
-                <img src="<?php bloginfo('template_url');?>/twitter.png" alt="Twitter" title="Twitter">
-                  Twitter
+                <img src="<?php bloginfo('template_url');?>/twitter.png" alt="Twitter" title="Twitter">Twitter
                 </a>
               </li>
               <li>
                 <a href="https://github.com/bobderrico80" target="_blank">
-                  <img src="<?php bloginfo('template_url');?>/github.png" alt="Github" title="Github"/>
-                  Github
+                  <img src="<?php bloginfo('template_url');?>/github.png" alt="Github" title="Github"/>Github
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/pub/bob-d-errico/9b/13b/a8b" target="_blank">
-                  <img src="<?php bloginfo('template_url');?>/linkedin.png" alt="LinkedIn" title="LinkedIn/">
-                  LinkedIn
+                  <img src="<?php bloginfo('template_url');?>/linkedin.png" alt="LinkedIn" title="LinkedIn/">LinkedIn
                 </a>
               </li>
               <li>
                 <a href="mailto:bob@bobderrico.com">
-                  <img src="<?php bloginfo('template_url');?>/email.png" alt="Email" title="Email">
-                  E-Mail
+                  <img src="<?php bloginfo('template_url');?>/email.png" alt="Email" title="Email">E-Mail
                 </a>
               </li>
               <li>
                 <a href="<?php bloginfo('rss2_url');?>" target="_blank">
-                  <img src="<?php bloginfo('template_url');?>/rss.png" alt="RSS" title="RSS">
-                  RSS
+                  <img src="<?php bloginfo('template_url');?>/rss.png" alt="RSS" title="RSS">RSS
                 </a>
               </li>
 
