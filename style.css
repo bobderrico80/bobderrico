@@ -141,13 +141,13 @@ blockquote {
   text-decoration:none;
 }
 
-.current-cat > a:link,
-.current-cat > a:visited {
+.current > a:link,
+.current > a:visited {
   color:white;
 }
 
-.current-cat,
-li.current-cat:hover {
+.current,
+li.current:hover {
   border-bottom:2px solid white; !important
 }
 
