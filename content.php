@@ -20,6 +20,26 @@ get_header();
             ?>
           </h2>
           <?php 
+            $postID = get_the_ID();
+            $dispURL = get_post_meta($postID, 'dispURL', true);
+            $linkURL = get_post_meta($postID, 'linkURL', true);
+            $githubURL = get_post_meta($postID, 'githubURL', true);
+            if(!empty($dispURL) &&
+              !empty($linkURL) && 
+              !empty($githubURL)) {
+          ?>
+            <h3 class="projectUrl">
+            <a href="<?php echo $linkURL; ?>" title="<?php the_title(); ?>" target="_blank">
+              <?php echo $dispURL; ?>
+            </a>
+            <a href="<?php echo $githubURL; ?>" title="View on Github" target="_blank">
+              (View on GitHub)
+            </a>
+          </h3>
+          <?php
+            } //end if
+          ?>
+          <?php 
             if(!is_page()){
           ?>
           <p class="articleTime"><?php the_time('F j, Y'); ?></p>
