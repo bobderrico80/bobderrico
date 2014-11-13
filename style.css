@@ -354,7 +354,7 @@ input[name="submit"] {
   }
   
   .articleImage  {
-    width:300px !important;
+    max-width:300px !important;
     float:left;
     margin-right:30px;
     margin-bottom:20px;
@@ -363,7 +363,10 @@ input[name="submit"] {
   .content img {
     width:auto;
     max-width:500px;
-  }
+    height:auto;
+    margin-top:1em;
+    margin-bottom:1em;
+}
     
   .project {
     background-color:#0c376c;
@@ -479,6 +482,7 @@ input[name="submit"] {
   .content img {
     width:auto;
     max-width:500px;
+    height:auto''
   }
   
   .navbar ul {
