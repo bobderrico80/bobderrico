@@ -34,7 +34,7 @@
 
             </ul>
         </div>
-        <h2>Skills</h2>
+        <h2>Tags</h2>
         <div class="tagList">
           <ul>
             <?php 
@@ -62,7 +62,7 @@
         <div class="recentPosts">
           <ul>
             <?php 
-              $recentPosts = wp_get_recent_posts();
+              $recentPosts = wp_get_recent_posts(array('post_status'=>'publish'));
               foreach ($recentPosts as $post) {
                 $href = get_permalink($post['ID']);
                 $title = $post['post_title'];
