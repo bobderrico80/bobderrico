@@ -16,7 +16,6 @@ body {
 body {
   font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif; 
   background-color:#03203e;
-  background-image:url('background-small.jpg');
   background-attachment:fixed;
   color:white;
   min-height:100%;
@@ -88,7 +87,6 @@ strong {
   color:white;
   padding:10px;
   position:relative;
-  height:100px;
 }
 
 .headerTitle, .headerSubtitle {
@@ -108,12 +106,11 @@ strong {
 }
 
 .headerTitle a:hover {
-  text-decoration:none;
-  border-bottom:1px solid white;
+  text-decoration:underline;
 }
 
 .headerSubtitle {
-  font-size:1em;
+  font-size:1.5em;
   color:#ffa400;
 }
 
@@ -128,13 +125,14 @@ strong {
 }
 
 .navbar li {
-  display: inline-block;
+  display: block;
   padding-bottom:2px;
   margin-right:10px;
+  font-size: 1.5em;
 }
 
 .navbar li:hover {
-  border-bottom:2px solid #4087D0;
+  text-decoration: underline;
 }
 
 .navbar a:link, .navbar a:visited {
@@ -152,7 +150,7 @@ strong {
 
 .current,
 li.current:hover {
-  border-bottom:2px solid white; !important
+  text-decoration: underline;
 }
 
 .pageWrapper {
@@ -299,6 +297,9 @@ input[name="submit"] {
   margin-bottom:5px
 }
 
+.tagList {
+  margin: 10px 0 20px 0
+}
 
 .footer {
   background-color:black;
@@ -320,6 +321,14 @@ input[name="submit"] {
   
   body {
     background-image:url('background-large.jpg')
+  }
+
+  .navbar {
+    height: 35px;
+  }
+
+  .navbar li {
+    display: inline-block;
   }
   
   .headerTitle, .headerSubtitle {
@@ -425,6 +434,14 @@ input[name="submit"] {
   .headerSubtitle {
     font-size:2em;
     margin-left: 0px;
+  }
+
+  .navbar {
+    height: 35px;
+  }
+
+  .navbar li {
+    display: inline-block;
   }
   
   .content, .sidebar {
